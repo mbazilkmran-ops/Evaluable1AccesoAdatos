@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class DBConnection {
 
-    // Datos para conectarnos a la base almacen que se ejecuta en este ordenador.
+    //Son los datos para conectarnos a la base almacen .
     private static final String DB_URL = "jdbc:mysql://localhost:3306/almacen";
     private static final String DB_USER = "root";
     private static final String DB_PASSWORD = "";

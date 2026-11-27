@@ -1,7 +1,7 @@
 package model;
 
 public class Producto {
-    // Estos nombres coinciden con las propiedades recibidas en el JSON.
+    // Estos nombres coinciden con las propiedades recibidas en el JSON para ver esos datos podemos abrir el json en pagina web .
     // Gson usa esos nombres para colocar los datos dentro del objeto.
     private int id;
     private String title;

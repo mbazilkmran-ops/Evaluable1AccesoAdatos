@@ -8,7 +8,7 @@ import java.util.List;
 public class main {
 
     public static void main(String[] args) throws IOException {
-        // ProductoService descarga de internet la lista de productos.
+        // ProductoService descargamos de internet la lista de productos.
         ProductoService servicio = new ProductoService();
         List<Producto> productos = servicio.obtenerProductos();
 

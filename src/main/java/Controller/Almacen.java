@@ -12,7 +12,7 @@ import java.util.List;
 
 public class Almacen {
 
-    // Guarda un producto en MySQL usando PreparedStatement para enviar sus valores.
+    // Guardamos un producto en MySQL usando PreparedStatement para enviar sus valores.
     public void insertarProducto(Producto producto) {
         Connection connection = DBConnection.getConnection();
         // Los ? son huecos que se completan con los datos del objeto.
@@ -77,7 +77,7 @@ public class Almacen {
         }
     }
 
-    // Inserta datos de ejemplo en empleados y pedidos mediante Statement, como pide la actividad.
+    // Inserta datos de ejemplo en empleados y pedidos mediante Statement
     public void insertarEmpleadosYPedidosConStatement() {
         Connection connection = DBConnection.getConnection();
         // INSERT IGNORE no vuelve a insertar una fila si su id ya existe.
@@ -102,7 +102,7 @@ public class Almacen {
         }
     }
 
-    // Añade a productos_fav los productos cuyo precio es superior a 1000.
+    // Esta consulta añade a productos_fav los productos cuyo precio es superior a 1000.
     public int insertarProductosFavoritos() {
         Connection connection = DBConnection.getConnection();
         // NOT EXISTS evita añadir de nuevo un producto que ya está marcado como favorito.
@@ -142,7 +142,7 @@ public class Almacen {
         }
     }
 
-    // WHERE filtra el resultado para dejar solo productos con precio menor que 600.
+    // Usamos la consulta WHERE para filtrar el resultado para dejar solo productos con precio menor que 600.
     public void mostrarProductosMenoresDe600() {
         String query = "SELECT * FROM productos WHERE precio < 600";
         try {
@@ -156,7 +156,7 @@ public class Almacen {
         }
     }
 
-    // Une productos con productos_fav para obtener los datos completos de cada favorito.
+    // ESA consulta une productos con productos_fav para obtener los datos completos de cada favorito.
     public void mostrarProductosFavoritos() {
         String query = """
                 SELECT p.*
